@@ -14,7 +14,7 @@ def writeln(out, text):
 def write_output(lib_ids, total_books_per_lib, book_ids_per_lib):
     with open("output.txt", "w") as out:
         writeln(out, len(lib_ids))
-        writeln(out, " ".join(map(str, lib_ids)))
+        # writeln(out, " ".join(map(str, lib_ids)))
         for i in range(len(lib_ids)):
             writeln(out, str(lib_ids[i]) + " " + str(total_books_per_lib[i]))
             writeln(out, " ".join(map(str, book_ids_per_lib[i])))
